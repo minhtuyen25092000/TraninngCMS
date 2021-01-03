@@ -1,0 +1,151 @@
+.carousell,
+.carousell .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative
+}
+
+.carousell {
+    display: none;
+    z-index: 1
+}
+
+.carousell .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    touch-action: manipulation;
+}
+
+.carousell .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0
+}
+
+.carousell .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousell .owl-item {
+    min-height: 1px;
+    float: left;
+    -webkit-touch-callout: none
+}
+
+.carousell .owl-item img {
+    display: block;
+    border-radius: 10px;
+}
+
+.carousell .owl-dots.disabled,
+.carousell .owl-nav.disabled {
+    display: none
+}
+
+.no-js .carousell,
+.carousell.owl-loaded {
+    display: block
+}
+
+.carousell .owl-dot,
+.carousell .owl-nav .owl-next,
+.carousell .owl-nav .owl-prev {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.carousell .owl-nav button.owl-next,
+.carousell .owl-nav button.owl-prev,
+.carousell button.owl-dot {
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font: inherit
+}
+
+.carousell.owl-loading {
+    opacity: 0;
+    display: block
+}
+
+.carousell.owl-hidden {
+    opacity: 0
+}
+
+.carousell.owl-refresh .owl-item {
+    visibility: hidden
+}
+
+.carousell.owl-drag .owl-item {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.carousell.owl-grab {
+    cursor: move;
+    cursor: grab
+}
+
+.carousell.owl-rtl {
+    direction: rtl
+}
+
+.carousell.owl-rtl .owl-item {
+    float: right
+}
+
+.carousell .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both
+}
+
+.carousell .owl-animated-in {
+    z-index: 0
+}
+
+.carousell .owl-animated-out {
+    z-index: 1
+}
+
+.carousell .fadeOut {
+    animation-name: fadeOut
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.owl-height {
+    transition: height .5s ease-in-out
+}
+
+.carousell .owl-item .owl-lazy {
+    opacity: 0;
+    transition: opacity .4s ease
+}
+
+.carousell .owl-item .owl-lazy:not([src]),
+.carousell .owl-item .owl-lazy[src^=""] {
+    max-height: 0
+}
+
+.carousell .owl-item img.owl-lazy {
+    transform-style: preserve-3d
+}

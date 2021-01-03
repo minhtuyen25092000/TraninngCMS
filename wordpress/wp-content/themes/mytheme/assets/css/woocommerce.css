@@ -1,0 +1,34 @@
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+    height: 400px;
+    border-radius: 10px;
+    padding: 24px;
+    background: #fff;
+    position: relative;
+    align-items: flex-end;
+    transition: .6s ease-out;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    float: left;
+}
+
+.woocommerce ul.products li.product .button {
+    background-color: #1599ef;
+    border-radius: 5px;
+    color: floralwhite;
+}
+
+.woocommerce ul.products li.product .price {
+    color: #f54545;
+    display: block;
+    font-family: monospace;
+    margin-bottom: .5em;
+    font-size: 100%;
+}
+
+.woocommerce ul.products li.product .onsale {
+    top: 0;
+    right: 0;
+    left: auto;
+    margin: -.5em -.5em 0 0;
+    background-color: #de4a4a;
+}
